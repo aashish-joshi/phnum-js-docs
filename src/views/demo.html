@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <module href="./components/head.html"></module>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <module href="./components/nav.html"></module>
+        <div class="container">
+            <h1 class="page-title">phnum-js Library</h1>
+            <h3 class="page-subtitle">OpenSource | JavaScript</h3>
+            <section>
+                <h2 class="sect-title">Contact</h2>
+                <p class="sect-body">This is a sample contact page. You will see a phone number below. Try and access this page from different web proxies and see the difference.</p>
+                <p class="sect-body">Contact Number: <span id="show-best-num" data-uri="num.json"></span></p>
+            </section>
+            <section>
+                <h2 class="sect-title">Prepare JSON File</h2>
+                <p class="sect-body">Use this app to prepare the JSON file with your phone numbers.</p>
+                <p class="sect-body">This JSON file is needed to display your phone numbers.</p>
+            </section>
+            <section>
+                <h2 class="sect-title">Enter your phone numbers</h2>
+                <form id="create-json" class="json-form">
+                    <label class="form-label"for="number">Number</label>
+                    <input type="number" name="number" id="number">
+                    <input type="submit" value="Add">
+                </form>
+                <label class="form-label" for="json">JSON Data</label><br>
+                <textarea name="json" id="json" cols="30" rows="10" disabled></textarea>
+                <button id="copy-clipboard">Copy</button>
+            </section>
+        </div>
+        <module href="./components/foot.html"></module>
+        <script src="https://cdn.jsdelivr.net/gh/aashish-joshi/phnum-js@main/dist/showBestNumber.min.js" async></script>
+        
+    </body>
+</html>
