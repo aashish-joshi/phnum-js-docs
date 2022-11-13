@@ -1,0 +1,28 @@
+{
+  "name": "phnum-js-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:scss": "sass -s compressed -o docs src/scss",
+    "css:autoprefixer": "postcss -u autoprefixer -r docs/*.css",
+    "css:lint": "stylelint src/scss/*.scss  --custom-syntax postcss-scss",
+    "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"
+  },
+  "keywords": [],
+  "author": "Aashish Joshi",
+  "license": "Apache License 2.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "htmlnano": "^2.0.2",
+    "postcss-cli": "^10.0.0",
+    "postcss-scss": "^4.0.5",
+    "posthtml": "^0.16.6",
+    "posthtml-cli": "^0.10.0",
+    "posthtml-modules": "^0.9.0",
+    "stylelint": "^14.15.0"
+  },
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}

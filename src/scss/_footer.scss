@@ -1,0 +1,13 @@
+@use 'vars';
+
+footer{
+    text-align: center;
+    color: vars.$primary-font-color;
+    font-size: 10px;
+}
+footer > hr{
+    width: 50%;
+    text-align: center;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
