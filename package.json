@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css:scss": "sass -s compressed -o docs src/scss",
+    "css:scss": "sass -s compressed src/scss:docs ",
     "css:autoprefixer": "postcss -u autoprefixer -r docs/*.css",
     "css:lint": "stylelint src/scss/*.scss  --custom-syntax postcss-scss",
     "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"
